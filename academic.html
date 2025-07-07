@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academic History | Md Ripon Al Mamun</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f6fa;
+      color: #3f396d;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-content {
+      flex: 1 0 auto;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #6c4f7c;
+      margin-bottom: 2rem;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #a388aa67;
+      border-radius: 2px;
+    }
+
+    .timeline-step {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .timeline-icon {
+      position: absolute;
+      left: -2px;
+      top: 0;
+      width: 36px;
+      height: 36px;
+      background: #fff;
+      border: 2px solid #a388aa;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6c4f7c;
+      font-size: 1.5rem;
+      z-index: 1;
+    }
+
+    .timeline-content {
+      margin-left: 50px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px 0 rgba(163, 136, 170, 0.1);
+      padding: 1.2rem 1.5rem;
+    }
+
+    .degree-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #6c4f7c;
+    }
+
+    .degree-institution {
+      font-size: 1.1rem;
+      color: #7e5e99;
+    }
+
+    .degree-year {
+      font-size: 1rem;
+      color: #a388aa;
+      font-weight: 500;
+    }
+
+    .honors-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .honors-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5em;
+      position: relative;
+    }
+
+    .honors-list li::before {
+      content: "🏅";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    footer {
+      flex-shrink: 0;
+      background: #a388aa67;
+    }
+
+    .c-btn {
+      background: #6c4f7c;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(163, 136, 170, 0.12);
+      text-decoration: none;
+    }
+
+    .c-btn:hover {
+      background: #5a3f69;
+      color: #fff;
+    }
+
+    @media (max-width: 767px) {
+      .timeline { padding-left: 20px; }
+      .timeline-content { margin-left: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Updated Navbar -->
+  <nav
+    id="navbar-top"
+    class="navbar navbar-expand-lg navbar-light sticky-top"
+    style="background: linear-gradient(90deg, #97839c 0%, #b49cc0 100%);
+           border-radius: 18px;
+           box-shadow: 0 4px 24px rgba(163,136,170,0.15);">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="index.html" style="color: #3f396d">
+        <img src="images/me.png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
+        Md Ripon Al Mamun
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Interests</a></li>
+          <li class="nav-item"><a class="nav-link active" href="academic.html" aria-current="page">Academic History</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+        </ul>
+      </div>
+      <a href="index.html#contact" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Academic Timeline -->
+  <div class="container main-content py-5">
+    <h1 class="section-title text-center">Academic History</h1>
+    <div class="timeline">
+
+<!--
+      <div class="timeline-step">
+        <div class="timeline-icon"><i class="bi bi-mortarboard"></i></div>
+        <div class="timeline-content">
+          <div class="degree-title">Ph.D. in Computer Science (Ongoing)</div>
+          <div class="degree-institution">University of Example</div>
+          <div class="degree-year">2024 - Present</div>
+          <p>Research focus: Artificial Intelligence, Deep Learning, and Computer Vision.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="timeline-icon"><i class="bi bi-mortarboard"></i></div>
+        <div class="timeline-content">
+          <div class="degree-title">M.Sc. in Computer Science & Engineering</div>
+          <div class="degree-institution">East West University, Dhaka</div>
+          <div class="degree-year">2021 - 2023</div>
+          <p>Thesis: "TEA LEAF DISEASE DETECTION & CLASSIFICATION USING YOLOV8 WITH XAI"</p>
+          <ul class="honors-list">
+            <li>Graduated with Distinction</li>
+            <li>Dean’s Award for Academic Excellence</li>
+          </ul>
+        </div>
+      </div>
+-->
+
+
+      <!-- B.Sc. -->
+      <div class="timeline-step">
+        <div class="timeline-icon"><i class="bi bi-mortarboard"></i></div>
+        <div class="timeline-content">
+          <div class="degree-title">B.Sc. in Computer Science & Engineering</div>
+          <div class="degree-institution">East West University, Dhaka,Bangladesh</div>
+          <div class="degree-year">2021 - 2025</div>
+          <p>Major in Data Science </p>
+          <p>Thesis: "TEA LEAF DISEASE DETECTION & CLASSIFICATION USING YOLOV8 WITH XAI"</p>
+          <ul class="honors-list">
+            <li>Scholarship for Academic Merit</li>
+            <li>Member, Programming Club,Telecommunication Club and Robotics Club</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HSC -->
+      <div class="timeline-step">
+        <div class="timeline-icon"><i class="bi bi-book"></i></div>
+        <div class="timeline-content">
+          <div class="degree-title">Higher Secondary Certificate (HSC)</div>
+          <div class="degree-institution">Kabi Nazrul Govt. College,Dhaka,Bangladesh</div>
+          <div class="degree-year">2017 - 2019</div>
+          <ul class="honors-list">
+            <li>Science Group, GPA 4.17</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SSC -->
+      <div class="timeline-step">
+        <div class="timeline-icon"><i class="bi bi-book"></i></div>
+        <div class="timeline-content">
+          <div class="degree-title">Secondary School Certificate (SSC)</div>
+          <div class="degree-institution">Siddheswari Boys' Higher Secondary School,Dhaka,Bangladesh</div>
+          <div class="degree-year">2015 - 2017</div>
+          <ul class="honors-list">
+            <li>Science Group, GPA 5.00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="index.html" class="btn btn-outline-secondary mt-4">&larr; Back to Home</a>
+    </div>
+  </div>
+
+  <footer class="text-center py-3">
+    <small>Done By | Md Ripon Al Mamun.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

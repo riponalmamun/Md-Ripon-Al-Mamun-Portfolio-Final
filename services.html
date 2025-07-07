@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Md Ripon Al Mamun</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Roboto', sans-serif;
+      background: #f8f6fa;
+      color: #3f396d;
+    }
+    .main-content {
+      flex: 1 0 auto;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 16px 0 rgba(163, 136, 170, 0.15);
+      transition: transform 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 4px 32px 0 rgba(163, 136, 170, 0.25);
+    }
+    .navbar {
+      background-color: #a388aa67 !important;
+    }
+    .section-title {
+      font-weight: 700;
+      color: #6c4f7c;
+      margin-bottom: 1.5rem;
+    }
+    .back-link {
+      margin-top: 2rem;
+      display: inline-block;
+    }
+    footer {
+      flex-shrink: 0;
+      background: #a388aa67;
+    }
+    .counter {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #6c4f7c;
+    }
+    .counter-label {
+      font-size: 1.1rem;
+      color: #7e5e99;
+      margin-bottom: 0;
+    }
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #a388aa67;
+      border-radius: 2px;
+    }
+    .timeline-step {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .timeline-step:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-icon {
+      position: absolute;
+      left: -2px;
+      top: 0;
+      width: 36px;
+      height: 36px;
+      background: #fff;
+      border: 2px solid #a388aa;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6c4f7c;
+      font-size: 1.5rem;
+      z-index: 1;
+    }
+    .timeline-content {
+      margin-left: 50px;
+    }
+    /* FAQ */
+    .accordion-button:not(.collapsed) {
+      color: #fff;
+      background-color: #a388aa;
+    }
+    .cta-btn {
+      background: #6c4f7c;
+      color: #fff;
+      border-radius: 30px;
+      padding: 12px 32px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(163, 136, 170, 0.12);
+    }
+    .cta-btn:hover {
+      background: #a388aa;
+      color: #fff;
+    }
+    /* Testimonials */
+    .testimonial-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px 0 rgba(163, 136, 170, 0.12);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .testimonial-photo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      border: 2px solid #a388aa;
+    }
+    .testimonial-name {
+      font-weight: 600;
+      color: #6c4f7c;
+    }
+    .testimonial-role {
+      font-size: 0.95rem;
+      color: #7e5e99;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="index.html" style="color: #3f396d">
+        <img src="images/me.png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
+        Md Ripon Al Mamun
+      </a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="service.html">Service</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#testimonial">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+        </ul>
+      </div>
+      <a href="index.html#contact" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</a>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <!-- Services Section -->
+    <div class="container py-5">
+      <h1 class="section-title text-center">My Services</h1>
+      <div class="row g-4 justify-content-center">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+          <div class="service-card p-4 text-center h-100">
+            <img src="images/data-science.png" alt="Data Science" style="width:60px;">
+            <h4 class="mt-3 mb-2">Data Science & AI</h4>
+            <p>
+              End-to-end solutions in data analysis, machine learning, deep learning, NLP, and AI automation. From data preprocessing to predictive modeling and deployment.
+            </p>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4">
+          <div class="service-card p-4 text-center h-100">
+            <img src="images/web-development.png" alt="Web Development" style="width:60px;">
+            <h4 class="mt-3 mb-2">Web & Software Development</h4>
+            <p>
+              Full-stack web application development using modern technologies (HTML, CSS, JavaScript, PHP, ReactJS). Scalable, secure, and user-friendly solutions.
+            </p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4">
+          <div class="service-card p-4 text-center h-100">
+            <img src="images/debug.png" alt="Debugging" style="width:60px;">
+            <h4 class="mt-3 mb-2">Debugging & Optimization</h4>
+            <p>
+              Efficient bug fixing, code optimization, and performance tuning for existing projects. Ensuring stability, speed, and maintainability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="index.html#contact" class="cta-btn mt-4">Request a Free Consultation</a>
+      </div>
+    </div>
+
+    <!-- Animated Counters -->
+    <div class="container py-4">
+      <div class="row text-center">
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter" data-count="5">0</div>
+          <div class="counter-label">Years Experience</div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter" data-count="30">0</div>
+          <div class="counter-label">Projects Completed</div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter" data-count="10">0</div>
+          <div class="counter-label">Research Publications</div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+          <div class="counter" data-count="15">0</div>
+          <div class="counter-label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Process Timeline -->
+    <div class="container">
+      <h2 class="section-title text-center">How I Work</h2>
+      <div class="timeline">
+        <div class="timeline-step">
+          <div class="timeline-icon"><i class="bi bi-chat-dots"></i></div>
+          <div class="timeline-content">
+            <h5>1. Consultation</h5>
+            <p>Understanding your needs, goals, and challenges to deliver tailored solutions.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon"><i class="bi bi-lightbulb"></i></div>
+          <div class="timeline-content">
+            <h5>2. Planning & Proposal</h5>
+            <p>Defining project scope, timeline, and deliverables with clear communication.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon"><i class="bi bi-gear"></i></div>
+          <div class="timeline-content">
+            <h5>3. Implementation</h5>
+            <p>Developing, testing, and optimizing solutions using best practices and latest tech.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-icon"><i class="bi bi-emoji-smile"></i></div>
+          <div class="timeline-content">
+            <h5>4. Delivery & Support</h5>
+            <p>On-time delivery with documentation and ongoing support for your success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container py-4">
+      <h2 class="section-title text-center">What Clients Say</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="testimonial-card d-flex align-items-start">
+            <img src="images/testimonial1.jpg" alt="Client 1" class="testimonial-photo">
+            <div>
+              <div class="testimonial-name">Dr. Farhana Haider</div>
+              <div class="testimonial-role">Professor, East West University</div>
+              <p class="mt-2 mb-0">
+                “Md Ripon is a dedicated professional with outstanding research and software development skills. Highly recommended!”
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card d-flex align-items-start">
+            <img src="images/testimonial2.jpg" alt="Client 2" class="testimonial-photo">
+            <div>
+              <div class="testimonial-name">Md. Naimur Rahman</div>
+              <div class="testimonial-role">Client, Web App Project</div>
+              <p class="mt-2 mb-0">
+                “Delivered our project on time and exceeded expectations. Communication was smooth and the final product was top quality.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container py-4">
+      <h2 class="section-title text-center">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+              What is your typical project workflow?
+            </button>
+          </h2>
+          <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              I start with a consultation, then move to planning, implementation, and finally delivery with ongoing support.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+              How do you ensure project quality?
+            </button>
+          </h2>
+          <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              I follow industry best practices, conduct thorough testing, and maintain transparent communication throughout the project.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+              Can you provide ongoing support after delivery?
+            </button>
+          </h2>
+          <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, I offer maintenance and support packages to ensure your solution remains up-to-date and effective.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="index.html" class="btn btn-outline-secondary back-link mt-4">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (always at the bottom) -->
+  <footer class="text-center py-3">
+    <small>Done By | Md Ripon Al Mamun.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Animated Counter Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-count');
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / 60);
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    });
+  </script>
+</body>
+</html>

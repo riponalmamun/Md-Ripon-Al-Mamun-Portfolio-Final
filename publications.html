@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications | Md Ripon Al Mamun</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f6fa;
+      color: #3f396d;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-content {
+      flex: 1 0 auto;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #6c4f7c;
+      margin-bottom: 2rem;
+    }
+
+    .pub-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 16px rgba(163, 136, 170, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .pub-card:hover {
+      box-shadow: 0 4px 32px rgba(163, 136, 170, 0.18);
+    }
+
+    .pub-title {
+      font-weight: 600;
+      color: #6c4f7c;
+      font-size: 1.15rem;
+    }
+
+    .pub-authors {
+      font-size: 1rem;
+      color: #7e5e99;
+      margin-bottom: 0.3rem;
+    }
+
+    .pub-venue {
+      font-size: 1rem;
+      color: #a388aa;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-badge {
+      background: #a388aa;
+      color: #fff;
+      font-size: 0.95rem;
+      border-radius: 8px;
+      padding: 0.3em 0.7em;
+      margin-left: 0.5em;
+    }
+
+    .pub-links a {
+      color: #6c4f7c;
+      margin-right: 1em;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+
+    .pub-links a:hover {
+      color: #a388aa;
+      text-decoration: underline;
+    }
+
+    footer {
+      flex-shrink: 0;
+      background: #a388aa67;
+    }
+
+    /* Button for contact */
+    .c-btn {
+      background: #6c4f7c;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(163, 136, 170, 0.12);
+      text-decoration: none;
+    }
+
+    .c-btn:hover {
+      background: #5a3f69;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav
+    id="navbar-top"
+    class="navbar navbar-expand-lg navbar-light sticky-top"
+    style="background: linear-gradient(90deg, #97839c 0%, #b49cc0 100%);
+           border-radius: 18px;
+           box-shadow: 0 4px 24px rgba(163,136,170,0.15);">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="index.html" style="color: #3f396d">
+        <img src="images/me.png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;" />
+        Md Ripon Al Mamun
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="academic.html">Academic History</a></li>
+          <li class="nav-item"><a class="nav-link active" href="publications.html" aria-current="page">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+        </ul>
+      </div>
+      <a href="index.html#contact" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</a>
+    </div>
+  </nav>
+
+<!-- Research & Social Profiles Section -->
+<section class="profiles mt-5 pt-5 pb-4" id="profiles">
+  <div class="text-center">
+    <h3>My Research & Professional Profiles</h3>
+    <p class="text-muted">Connect with me through the platforms below</p>
+  </div>
+  <div class="d-flex justify-content-center flex-wrap gap-3 mt-4" data-aos="fade-up">
+    <a href="https://www.researchgate.net/profile/Md-Ripon-Al-Mamun?ev=hdr_xprf" target="_blank" class="btn btn-outline-primary rounded-pill">
+      <i class="bi bi-journal-text"></i> ResearchGate
+    </a>
+    <a href="https://scholar.google.com/citations?hl=en&authuser=5&user=N9_yGkMAAAAJ" target="_blank" class="btn btn-outline-dark rounded-pill">
+      <i class="bi bi-mortarboard"></i> Google Scholar
+    </a>
+    <a href="https://orcid.org/0009-0007-2505-0505" target="_blank" class="btn btn-outline-success rounded-pill">
+      <i class="bi bi-bar-chart-line"></i> ORCID
+    </a>
+    <a href="https://www.ieee.org/profile/myprofile/myprofile.html?refSite=https://ieeexplore.ieee.org&refSiteName=IEEE%20Xplore" target="_blank" class="btn btn-outline-secondary rounded-pill">
+      <i class="bi bi-cpu"></i> IEEE Xplore
+    </a>
+    <a href="https://github.com/riponalmamun" target="_blank" class="btn btn-outline-dark rounded-pill">
+      <i class="bi bi-github"></i> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/mdriponalmamun/" target="_blank" class="btn btn-outline-primary rounded-pill">
+      <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://www.kaggle.com/riponalmamun" target="_blank" class="btn btn-outline-info rounded-pill">
+      <i class="bi bi-graph-up"></i> Kaggle
+    </a>
+  </div>
+</section>
+
+
+
+  <!-- Publications Content -->
+  <div class="container main-content py-5">
+    <h1 class="section-title text-center">Selected Publications</h1>
+    <div class="row justify-content-center">
+      <!-- Publication Cards -->
+      <!-- Repeat block for each publication -->
+
+      <div class="col-lg-10 pub-card">
+        <div class="pub-title">
+          Cardiovascular Health Analysis: Machine Learning and Explainable AI to Predict Heart Attacks
+          <span class="pub-badge">Conference Paper</span>
+        </div>
+        <div class="pub-authors">Md Ripon Al Mamun, Md. Rafi; Hrittik Chakraborty, Fahmida Anjum, Raiyan Gani,Mohammad Rifat Ahmmad Rashid,Raihan Ul Islam</div>
+        <div class="pub-venue">IEEE Access, 2023</div>
+        <div><small>A heart attack, medically termed myocardial infarction, occurs due to a blockage of blood flow to the heart, resulting in tissue damage. To enable early diagnosis, machine learning models can play a pivotal role in analyzing data related to heart attacks. This advancement significantly improves patient outcomes and enhances the overall efficiency of healthcare systems. The objective of this study is to reduce heart attack mortality by enabling early detection and risk prediction through advanced machine learning techniques, thereby improving patient outcomes globally and reducing the burden of cardiac diseases. This paper employs statistical methods to predict the occurrence of heart attacks. Based on the outcomes of hypothesis testing, machine learning models such as Random Forest and XGBoost were trained. For XGBoost, the accuracy rate was 98.68%, the precision rate was 98.45%, the recall (sensitivity) rate was 98.71%, and the F1-score was 98.58%. Furthermore, explainable AI techniques such as SHAP (SHapley Additive exPlanations) were utilized to identify the influencing factors in the machine learning model. In conclusion, certain cardiovascular indicators, such as systolic blood pressure, differ significantly between patients who have experienced heart attacks and those who have not. Understanding heart attack risks through cardiovascular analysis and AI models advances personalized medicine and early intervention strategies.</small></div>
+        <div class="pub-links mt-2">
+          <a href="https://doi.org/10.1109/ICCIT64611.2024.11022132" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          <a href="https://scholar.google.com/citations?user=N9_yGkMAAAAJ&hl=en&authuser=5" target="_blank"><i class="bi bi-google"></i>Scholar</a>
+          <a href="https://ieeexplore.ieee.org/document/11022132/" target="_blank"><i class="bi bi-journal-text"></i>IEEE Xplore</a>
+        </div>
+      </div>
+
+            <div class="col-lg-10 pub-card">
+        <div class="pub-title">
+          Energy-Efficient Hyperparameter Tuning for Deep Learning Models
+          <span class="pub-badge">Conference Paper</span>
+        </div>
+        <div class="pub-authors">Md Ripon Al Mamun</div>
+        <div class="pub-venue">Researchgate. Access, 2023</div>
+        <div><small>Proposes a novel approach to hyperparameter optimization that reduces energy consumption without sacrificing model performance.</small></div>
+        <div class="pub-links mt-2">
+          <a href="https://www.researchgate.net/profile/Md-Ripon-Al-Mamun?ev=hdr_xprf" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=N9_yGkMAAAAJ&citation_for_view=N9_yGkMAAAAJ:qUcmZB5y_30C" target="_blank"><i class="bi bi-google"></i>Scholar</a>
+          <a href="https://www.researchgate.net/profile/Md-Ripon-Al-Mamun?ev=hdr_xprf" target="_blank"><i class="bi bi-journal-text"></i>IEEE Xplore</a>
+        </div>
+      </div>
+
+      <div class="col-lg-10 pub-card">
+        <div class="pub-title">
+          Machine Learning for Heart Attack Prediction: A Comparative Study
+          <span class="pub-badge">Conference</span>
+        </div>
+        <div class="pub-authors">Md Ripon Al Mamun, Naimur Rahman, et al.</div>
+        <div class="pub-venue">ICMLA, 2022</div>
+        <div><small>Compares various machine learning algorithms for early prediction of heart attacks using clinical datasets.</small></div>
+        <div class="pub-links mt-2">
+          <a href="https://doi.org/10.xxxx/icmla.2022" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          <a href="https://scholar.google.com/citations?user=N9_yGkMAAAAJ&hl=en&authuser=5" target="_blank"><i class="bi bi-google"></i>Scholar</a>
+          <a href="https://ieeexplore.ieee.org/" target="_blank"><i class="bi bi-journal-text"></i>IEEE Xplore</a>
+        </div>
+      </div>
+
+      <div class="col-lg-10 pub-card">
+        <div class="pub-title">
+          Deep Learning-Based Species Classification in Ecological Datasets
+          <span class="pub-badge">Journal</span>
+        </div>
+        <div class="pub-authors">Md Ripon Al Mamun, Farhana Haider, et al.</div>
+        <div class="pub-venue">Ecological Informatics, 2022</div>
+        <div><small>Presents a deep learning framework for accurate classification of species in large-scale ecological datasets.</small></div>
+        <div class="pub-links mt-2">
+          <a href="https://doi.org/10.xxxx/eco.info.2022" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+          <a href="https://scholar.google.com/citations?user=N9_yGkMAAAAJ&hl=en&authuser=5" target="_blank"><i class="bi bi-google"></i>Scholar</a>
+        </div>
+      </div>
+    </div>
+
+
+
+<h2 class="section-title text-center mt-5">Additional Research (In Progress or Published)</h2>
+<div class="row justify-content-center">
+  
+  <<div class="col-lg-10 pub-card">
+  <div class="pub-title">
+    Supply Chain Optimization Using Machine Learning
+    <span class="pub-badge">Published on IEEE Xplore</span>
+  </div>
+  <div class="pub-venue">IEEE Xplore, 2024</div>
+  <div>
+    <small>
+      Investigates advanced machine learning techniques for logistics analysis and demand forecasting to enhance supply chain efficiency and resilience under uncertainty.
+    </small>
+  </div>
+  <div class="pub-links mt-2">
+    <a href="https://doi.org/10.xxxx/supply.chain.ieee" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+    <a href="https://scholar.google.com/citations?user=N9_yGkMAAAAJ" target="_blank"><i class="bi bi-google"></i>Scholar</a>
+    <a href="https://ieeexplore.ieee.org/" target="_blank"><i class="bi bi-journal-text"></i>IEEE Xplore</a>
+  </div>
+</div>
+
+<div class="col-lg-10 pub-card">
+  <div class="pub-title">
+    Framingham Heart Study: Risk Factor Analysis with XAI
+    <span class="pub-badge">Published on IEEE Xplore</span>
+  </div>
+  <div class="pub-venue">IEEE Xplore, 2024</div>
+  <div>
+    <small>
+      Extends the Framingham Heart Study by leveraging machine learning models integrated with explainable AI (SHAP, LIME) to uncover critical cardiovascular risk factors.
+    </small>
+  </div>
+  <div class="pub-links mt-2">
+    <a href="https://doi.org/10.xxxx/framingham.ieee" target="_blank"><i class="bi bi-link-45deg"></i>DOI</a>
+    <a href="https://scholar.google.com/citations?user=N9_yGkMAAAAJ" target="_blank"><i class="bi bi-google"></i>Scholar</a>
+    <a href="https://ieeexplore.ieee.org/" target="_blank"><i class="bi bi-journal-text"></i>IEEE Xplore</a>
+  </div>
+</div>
+
+
+  <div class="col-lg-10 pub-card">
+  <div class="pub-title">
+    Sandfly Species Classification via Deep Learning
+    <span class="pub-badge">Under Review</span>
+  </div>
+  <div class="pub-venue">Targeted Q1 Journal</div>
+  <div>
+    <small>
+      Proposes a deep learning model using genital and pharyngeal morphological image data for accurate classification of sandfly species—supporting vector-borne disease research.
+    </small>
+  </div>
+</div>
+
+
+  <div class="col-lg-10 pub-card">
+    <div class="pub-title">
+      Deep Learning for ECG Signal Analysis
+      <span class="pub-badge">Under Review</span>
+    </div>
+    <div class="pub-venue">Target Journal Submission</div>
+    <div>
+      <small>
+        Applies convolutional neural networks (CNNs) to raw ECG signal data for automatic detection of cardiac abnormalities, with potential clinical applications in early diagnosis.
+      </small>
+    </div>
+  </div>
+
+</div>
+
+    <!-- Buttons -->
+    <div class="text-center">
+      <a href="https://scholar.google.com/" target="_blank" class="btn btn-outline-primary mt-4">
+        <i class="bi bi-google"></i> View All Publications on Google Scholar
+      </a>
+      <a href="index.html" class="btn btn-outline-secondary mt-4 ms-2">&larr; Back to Home</a>
+    </div>
+  </div>
+
+  <footer class="text-center py-3">
+    <small>Done By | Md Ripon Al Mamun.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

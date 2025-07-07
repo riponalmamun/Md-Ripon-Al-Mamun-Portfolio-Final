@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Md Ripon Al Mamun</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f6fa;
+      color: #3f396d;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-content {
+      flex: 1 0 auto;
+    }
+    .section-title {
+      font-weight: 700;
+      color: #6c4f7c;
+      margin-bottom: 2rem;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 16px 0 rgba(163, 136, 170, 0.10);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card:hover {
+      box-shadow: 0 4px 32px 0 rgba(163, 136, 170, 0.18);
+      transform: translateY(-5px) scale(1.02);
+    }
+    .project-title {
+      font-weight: 600;
+      color: #6c4f7c;
+      font-size: 1.15rem;
+    }
+    .project-meta {
+      font-size: 0.98rem;
+      color: #a388aa;
+      margin-bottom: 0.5rem;
+    }
+    .project-tags .badge {
+      background: #a388aa;
+      color: #fff;
+      margin-right: 0.4em;
+      font-size: 0.9em;
+      border-radius: 8px;
+    }
+    .project-links a {
+      color: #6c4f7c;
+      margin-right: 1em;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    .project-links a:hover {
+      color: #b49cc0;
+      text-decoration: underline;
+    }
+    footer {
+      flex-shrink: 0;
+      background: #a388aa67;
+    }
+    .c-btn {
+      background: #6c4f7c;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(163, 136, 170, 0.12);
+      text-decoration: none;
+    }
+    .c-btn:hover {
+      background: #5a3f69;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav
+    id="navbar-top"
+    class="navbar navbar-expand-lg navbar-light sticky-top"
+    style="background: linear-gradient(90deg, #97839c 0%, #b49cc0 100%);
+           border-radius: 18px;
+           box-shadow: 0 4px 24px rgba(163,136,170,0.15);">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="index.html" style="color: #3f396d">
+        <img src="images/me.png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
+        Md Ripon Al Mamun
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html" aria-current="page">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="academic.html">Academic History</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+        </ul>
+      </div>
+      <a href="index.html#contact" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <div class="container main-content py-5">
+    <h1 class="section-title text-center">Projects</h1>
+    <div class="row g-4 justify-content-center">
+
+
+<!-- Example Project Card with Image -->
+<!-- Project 1 -->
+<div class="col-md-6 col-lg-4 d-flex">
+  <div class="project-card">
+    <div>
+      <img src="images/Heart Attack Paper 1.png" alt="Heart Attack Prediction" class="img-fluid rounded mb-3 shadow-sm">
+      <div class="project-title">Heart Attack Prediction Using ML & XAI</div>
+      <div class="project-meta">Conference Paper — Mar 8, 2022</div>
+      <div class="project-tags mb-2">
+        <span class="badge">Machine Learning</span>
+        <span class="badge">XAI</span>
+        <span class="badge">Healthcare</span>
+      </div>
+      <p>
+        Published a paper using Random Forest and XGBoost to predict heart attacks. Integrated Explainable AI methods to enhance transparency and clinical interpretability.
+      </p>
+    </div>
+    <div class="project-links mt-2">
+      <a href="https://ieeexplore.ieee.org/document/11022132/" target="_blank">Read Paper</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 -->
+<div class="col-md-6 col-lg-4 d-flex">
+  <div class="project-card">
+    <div>
+      <img src="images/ResearchGate Energy 2.png" alt="Energy-Efficient Tuning" class="img-fluid rounded mb-3 shadow-sm">
+      <div class="project-title">Energy-Efficient Hyperparameter Tuning</div>
+      <div class="project-meta">Conference Presentation — Feb 2025</div>
+      <div class="project-tags mb-2">
+        <span class="badge">Optimization</span>
+        <span class="badge">Random Forest</span>
+        <span class="badge">Energy</span>
+      </div>
+      <p>
+        Proposed a hyperparameter tuning method combining Multi-Information Source Optimization and Augmented Gaussian Processes to reduce resource usage by up to 70%.
+      </p>
+    </div>
+    <div class="project-links mt-2">
+      <a href="https://www.researchgate.net/publication/389167317_Project_Title_Energy-Efficient_Hyperparameter_Tuning_Using_Multi-_Information_Source_Optimization_and_Augmented_Gaussian_Processes_with_Random_Forest_Submitted_By_Group_-6_Energy-Efficient_Hyperparame" target="_blank">Read Paper</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 -->
+<div class="col-md-6 col-lg-4 d-flex">
+  <div class="project-card">
+    <div>
+      <img src="images/Species Classification.png" alt="Species Classification" class="img-fluid rounded mb-3 shadow-sm">
+      <div class="project-title">Advances in Species Classification</div>
+      <div class="project-meta">Upcoming Journal — 2025</div>
+      <div class="project-tags mb-2">
+        <span class="badge">Ecology</span>
+        <span class="badge">Machine Learning</span>
+      </div>
+      <p>
+        An upcoming journal paper exploring novel classification methods for ecological datasets using image processing and ML, supporting biodiversity conservation.
+      </p>
+    </div>
+    <div class="project-links mt-2">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalSpecies">Read More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 4 -->
+<div class="col-md-6 col-lg-4 d-flex">
+  <div class="project-card">
+    <div>
+      <img src="images/To Do App 4.png" alt="To-Do App" class="img-fluid rounded mb-3 shadow-sm">
+      <div class="project-title">TO-DO LIST Application</div>
+      <div class="project-meta">GitHub Release — Jun 23, 2025</div>
+      <div class="project-tags mb-2">
+        <span class="badge">Web App</span>
+        <span class="badge">React</span>
+        <span class="badge">Productivity</span>
+      </div>
+      <p>
+        Developed a React-based task management app with features like calendars, Kanban boards, and real-time syncing to boost productivity.
+      </p>
+    </div>
+    <div class="project-links mt-2">
+      <a href="https://github.com/riponalmamun/TO-DO--LIST-APPLICATION-PROJECTS" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 5 -->
+<div class="col-md-6 col-lg-4 d-flex">
+  <div class="project-card">
+    <div>
+      <img src="images/Supply Chain.png" alt="Supply Chain" class="img-fluid rounded mb-3 shadow-sm">
+      <div class="project-title">Supply Chain Optimization Research</div>
+      <div class="project-meta">Upcoming Paper — 2025</div>
+      <div class="project-tags mb-2">
+        <span class="badge">ML</span>
+        <span class="badge">Supply Chain</span>
+        <span class="badge">Logistics</span>
+      </div>
+      <p>
+        This paper explores how data science and machine learning can streamline supply chain operations, from inventory forecasting to delivery routing.
+      </p>
+    </div>
+    <div class="project-links mt-2">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalUpcoming">Read More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Project 6 -->
+<div class="col-md-6 col-lg-4 d-flex">
+  <div class="project-card">
+    <div>
+      <img src="images/Heart Disease.png" alt="Framingham Study" class="img-fluid rounded mb-3 shadow-sm">
+      <div class="project-title">Framingham Heart Study Insights</div>
+      <div class="project-meta">Upcoming Research — 2025</div>
+      <div class="project-tags mb-2">
+        <span class="badge">Healthcare</span>
+        <span class="badge">ML</span>
+        <span class="badge">Statistics</span>
+      </div>
+      <p>
+        This research utilizes the Framingham dataset to model cardiovascular disease risk using statistical methods and ML, aiming to improve prevention strategies.
+      </p>
+    </div>
+    <div class="project-links mt-2">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalFramingham">Read More</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    <div class="text-center">
+      <a href="index.html" class="btn btn-outline-secondary mt-4">&larr; Back to Home</a>
+    </div>
+  </div>
+
+<footer class="text-center py-4">
+  <div class="mb-3">
+    <!-- GitHub -->
+    <a href="https://github.com/riponalmamun" target="_blank" class="mx-3 text-decoration-none text-dark" style="font-size: 2.2rem;">
+      <i class="bi bi-github"></i>
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/mdriponalmamun/" target="_blank" class="mx-3 text-decoration-none text-primary" style="font-size: 2.2rem;">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/riponalmamun.rasel.2/" target="_blank" class="mx-3 text-decoration-none text-primary" style="font-size: 2.2rem;">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <!-- ResearchGate -->
+    <a href="https://www.researchgate.net/profile/Md-Ripon-Al-Mamun?ev=hdr_xprf" target="_blank" class="mx-3 text-decoration-none">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" style="width: 36px; vertical-align: middle;">
+    </a>
+    <!-- Kaggle -->
+    <a href="https://www.kaggle.com/riponalmamun" target="_blank" class="mx-3 text-decoration-none">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="Kaggle" style="width: 38px; vertical-align: middle;">
+    </a>
+    <!-- Google Scholar -->
+    <a href="https://scholar.google.com/citations?user=N9_yGkMAAAAJ&hl=en&authuser=5" target="_blank" class="mx-3 text-decoration-none">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" style="width: 38px; vertical-align: middle;">
+    </a>
+    <!-- ORCID -->
+    <a href="https://orcid.org/0009-0007-2505-0505" target="_blank" class="mx-3 text-decoration-none">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" style="width: 38px; vertical-align: middle;">
+    </a>
+  </div>
+  <small class="text-muted">Done By | Md Ripon Al Mamun.</small>
+</footer>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
