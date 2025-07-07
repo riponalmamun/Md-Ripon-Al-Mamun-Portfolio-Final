@@ -19,7 +19,30 @@ Welcome to my personal portfolio — a live space that highlights my projects, a
 
 ## 🚀 Live Demo
 
-👉 [**Click to Visit My Portfolio Website**]([https://your-portfolio-link.com](https://riponalmamun.github.io/Md-Ripon-Al-Mamun-Portfolio-Final/))
+🌐 **View it Live:**  
+👉 [https://riponalmamun.github.io/Md-Ripon-Al-Mamun-Portfolio-Final/](https://riponalmamun.github.io/Md-Ripon-Al-Mamun-Portfolio-Final/)
+
+> 💡 Hosted via **GitHub Pages**
+
+---
+
+## 🔧 Tech Stack
+
+- **HTML5** & **CSS3**
+- **Bootstrap 5** (Responsive components)
+- **Google Fonts** & **Bootstrap Icons**
+- **Custom SVG & PNG icons for platforms (Kaggle, ORCID, Google Scholar, etc.)**
+
+---
+
+## ✨ Features
+
+✅ Clean, mobile-responsive layout  
+✅ Interactive cards for projects and research  
+✅ Social and academic profile links with icons  
+✅ Embedded paper and GitHub links  
+✅ Elegant contact form  
+✅ Project thumbnails with hover effects
 
 ---
 
