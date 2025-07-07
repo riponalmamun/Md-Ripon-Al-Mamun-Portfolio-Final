@@ -1,4 +1,6 @@
-# 🌐 Md Ripon Al Mamun — Interactive Portfolio
+![image](https://github.com/user-attachments/assets/5c0c3f0b-15d7-4722-b2ae-e972609a6d89)
+
+# 🌐 Md Ripon Al Mamun 
 
 > ✨ *"Where AI meets creativity and research fuels innovation."*
 
